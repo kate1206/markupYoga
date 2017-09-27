@@ -1,0 +1,73 @@
+.block-form{
+	max-width: 459px;
+	background: #fff;
+	border-radius: 20px;
+	padding: 36px 34px;
+	box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.15);
+	margin: 0 67px 0 165px;
+	.form{
+		padding: 0 0 12px;
+		input[type="text"],
+		input[type="number"],
+		select{
+			height: 50px;
+			background: #f2f2f2;
+			width: 100%;
+			border: none;
+			border-radius: 10px;
+			margin: 0 0 18px;
+			padding: 0 6px;
+			color: #888;
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+	.title-form{
+		font-size: 26px;
+		line-height: 28px;
+		font-weight: 600;
+		color: #5363db;
+		display: block;
+		margin: 0 0 26px;
+	}
+	.button{ 
+		background: #5b6ceb;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 600;
+		text-align: center;
+		padding: 15px 67px;
+		display:inline-block;
+		border: none;
+		float: right;
+		box-shadow: 5px 4px 17px -6px rgba(0,0,0,0.4);
+		border-radius:10px;
+		&:hover{
+			background: #475bf1;
+		}
+	}
+	@media screen and (max-width:1023px) {
+		margin: 0 49px 0 21px;
+	}
+	@media screen and (max-width:767px) {
+		order: 1;
+		margin: 0;
+		max-width: none;
+		padding: 20px;
+		width: 100%;
+		.button{
+			float: left;
+		}
+		.form{
+			input[type="text"],
+			select{
+				height: 40px;
+			}
+		}
+		.title-form{
+			font-size: 20px;
+			line-height: 26px;
+			margin: 0 0 20px;
+		}
+	}
+}

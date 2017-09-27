@@ -1,0 +1,16 @@
+.logo{
+	position: absolute;
+	top: -18px;
+	left: 50%;
+	width: 68px;
+	transform: translate(-50%,50%);
+	img{
+		display: block;
+	}
+	@media screen and (max-width:768px) {
+		position: static;
+		transform: none;
+		float: left;
+		width: 60px;
+	}
+}

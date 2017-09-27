@@ -1,0 +1,128 @@
+.block-program{
+	text-align: center;
+	padding: 120px 0;
+	.holder{
+		max-width: 1210px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	h2{
+		font-size: 30px;
+		line-height: 32px;
+		margin: 0 0 15px;
+		color: #5b6ceb;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.slogan{
+		font-family: 'Seaweed Script', cursive;
+		font-size: 35px;
+		color: #777;
+		display: block;
+		margin: 0 0 67px;
+	}
+	.grid-block{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0px -15px;
+		.grid-box{
+			width: 50%;
+			padding: 0 15px 30px;
+			display: flex;
+		}
+		.grid-box-frame{
+			background: #fff;
+			display: flex;
+			border-radius: 10px;
+			box-shadow: 5px 2px 28px -4px rgba(0,0,0,0.2);
+			.box-img{
+				width: 47%;
+				border-radius: 10px 0 0 10px;
+				overflow: hidden;
+				img{
+					width: 100%;
+				}
+			}
+			.box-text{
+				width: 53%;
+				text-align: left;
+				font-size: 14px;
+				line-height: 22px;
+				padding: 46px 46px 9px 33px;
+				.title{
+					display: block;
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 22px;
+					text-transform: uppercase;
+					color: #777;
+					margin: 0 0 27px;
+				}
+				.title-sub{
+						display: block;
+						font-size: 14px;
+						color: #999;
+					}
+				p{
+					margin: 0 0 6px;
+				}
+			}
+		}
+	}
+	@media screen and (max-width:1023px) {
+		.grid-block{
+			.grid-box-frame{
+				display: block;
+				border-radius: 0;
+				padding: 20px;
+				.box-img{
+					width: 100%;
+					border-radius: 0;
+					margin: 0 0 20px;
+					img{
+						max-width: 300px;
+						margin: 0 auto;
+					}
+				}
+				.box-text{
+					width: 100%;
+					padding: 0;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 767px) {
+		padding: 20px 0;
+		h2{
+			font-size: 21px;
+			line-height: 25px;
+		}
+		.slogan{
+			font-size: 29px;
+			margin: 0 0 20px;
+		}
+		.grid-block{
+			margin: 0;
+			.grid-box{
+				width: 100%;
+				padding: 0 0 20px;
+			}
+			.grid-box-frame{
+				.box-img{
+					width: 60%;
+					margin: 0 auto 20px;
+				}
+				.box-text{
+					font-size: 13px;
+					line-height: 20px;
+					.title{
+						font-size: 17px;
+						line-height: 22px;
+						margin: 0 0 15px;
+					}
+				}
+			}
+		}
+	}
+}
